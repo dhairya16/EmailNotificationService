@@ -8,7 +8,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
 @Component
-@KafkaListener(topics = "product-created-events-topic")
+@KafkaListener(topics = "product-created-events-topic", groupId = "product-created-events")
 public class ProductCreatedEventHandler {
     private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
 
