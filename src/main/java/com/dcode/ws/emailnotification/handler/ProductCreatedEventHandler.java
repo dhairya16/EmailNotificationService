@@ -18,4 +18,3 @@ public class ProductCreatedEventHandler {
         LOGGER.info("Received a new event " + productCreatedEvent.getTitle());
     }
 }
-d
