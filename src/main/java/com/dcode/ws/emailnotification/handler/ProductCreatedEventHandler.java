@@ -1,6 +1,7 @@
 package com.dcode.ws.emailnotification.handler;
 
 import com.dcode.ws.core.ProductCreatedEvent;
+import com.dcode.ws.emailnotification.error.NotRetryableException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaHandler;
@@ -17,3 +18,4 @@ public class ProductCreatedEventHandler {
         LOGGER.info("Received a new event " + productCreatedEvent.getTitle());
     }
 }
+d
